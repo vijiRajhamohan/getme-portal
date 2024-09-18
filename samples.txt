@@ -1,0 +1,154 @@
+
+  const orderPlaced = [
+    {
+      orderNo: 12345, noOfItems: 2, orderTotal: 61.98, orderDate: "21/02/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12346, noOfItems: 1, orderTotal: 19.99, orderDate: "22/02/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12347, noOfItems: 1, orderTotal: 20.99, orderDate: "23/02/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "The Doctors Riesling", subProductName: "2020, Marlborough", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 1.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12348, noOfItems: 2, orderTotal: 110.98, orderDate: "26/02/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "Veuve Clicquot Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 69.99, productQty: 1, qtyPrice: 69.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 111.98, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    },
+    {
+      orderNo: 12349, noOfItems: 3, orderTotal: 80.97, orderDate: "28/02/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 },
+      { productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 81.97, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    },
+    {
+      orderNo: 12352, noOfItems: 1, orderTotal: 41.99, orderDate: "01/03/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 41.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12353, noOfItems: 2, orderTotal: 61.98, orderDate: "02/03/2022", orderStatus: "ORDER PLACED",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+  ]
+
+  const orderAccepted = [
+    {
+      orderNo: 12345, noOfItems: 2, orderTotal: 61.98, orderDate: "21/02/2022", orderStatus: "ACCEPTED",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12346, noOfItems: 1, orderTotal: 19.99, orderDate: "22/02/2022", orderStatus: "ACCEPTED",
+      orderDetail: [{ productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12347, noOfItems: 1, orderTotal: 20.99, orderDate: "23/02/2022", orderStatus: "ACCEPTED",
+      orderDetail: [{ productName: "The Doctors Riesling", subProductName: "2020, Marlborough", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 1.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12348, noOfItems: 2, orderTotal: 110.98, orderDate: "26/02/2022", orderStatus: "ACCEPTED",
+      orderDetail: [{ productName: "Veuve Clicquot Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 69.99, productQty: 1, qtyPrice: 69.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 111.98, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    },
+  ]
+
+  const orderProcessing = [
+    {
+      orderNo: 12349, noOfItems: 3, orderTotal: 80.97, orderDate: "28/02/2022", orderStatus: "PROCESSING",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 69.99, productQty: 1, qtyPrice: 69.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 },
+      { productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 81.97, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    },
+    {
+      orderNo: 12352, noOfItems: 1, orderTotal: 41.99, orderDate: "01/03/2022", orderStatus: "PROCESSING",
+      orderDetail: [{ productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 41.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12353, noOfItems: 2, orderTotal: 61.98, orderDate: "02/03/2022", orderStatus: "PROCESSING",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+  ]
+
+  const orderReady = [
+    {
+      orderNo: 12345, noOfItems: 2, orderTotal: 61.98, orderDate: "21/02/2022", orderStatus: "ORDER READY",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    }
+  ]
+
+  const orderOutforDelivery = [
+    {
+      orderNo: 12346, noOfItems: 1, orderTotal: 19.99, orderDate: "22/02/2022", orderStatus: "OUT FOR DELIVERY",
+      orderDetail: [{ productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    }
+  ]
+
+  const orderStorePickup: any = []
+
+  const pastOrders = [
+    {
+      orderNo: 12345, noOfItems: 2, orderTotal: 61.98, orderDate: "21/02/2022", orderStatus: "PAST ORDERS",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 61.98, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12346, noOfItems: 1, orderTotal: 19.99, orderDate: "22/02/2022", orderStatus: "PAST ORDERS",
+      orderDetail: [{ productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 0.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12347, noOfItems: 1, orderTotal: 20.99, orderDate: "23/02/2022", orderStatus: "PAST ORDERS",
+      orderDetail: [{ productName: "The Doctors Riesling", subProductName: "2020, Marlborough", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 19.99, deliveryCharge: 1.00, discount: 0.00, tax: 0.00
+    },
+    {
+      orderNo: 12348, noOfItems: 2, orderTotal: 110.98, orderDate: "26/02/2022", orderStatus: "PAST ORDERS",
+      orderDetail: [{ productName: "Veuve Clicquot Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 69.99, productQty: 1, qtyPrice: 69.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 }],
+      itemTotal: 111.98, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    },
+    {
+      orderNo: 12349, noOfItems: 3, orderTotal: 80.97, orderDate: "28/02/2022", orderStatus: "PAST ORDERS",
+      orderDetail: [{ productName: "Villa Maria Cellar Selection Syrah", subProductName: "2020, Hawkes Bay", unitPrice: 69.99, productQty: 1, qtyPrice: 69.99 },
+      { productName: "H.Lanvin & Fils Champagne Brut", subProductName: "Non Vintage, Champagne", unitPrice: 41.99, productQty: 1, qtyPrice: 41.99 },
+      { productName: "Duck Duck Goose Shiraz", subProductName: "2018, Barossa Valley", unitPrice: 19.99, productQty: 1, qtyPrice: 19.99 }],
+      itemTotal: 81.97, deliveryCharge: 1.00, discount: 2.00, tax: 0.00
+    }
+  ]
+
+  let ordersMap: any = {
+    placed: orderPlaced,
+    accepted: orderAccepted,
+    processing: orderProcessing,
+    ready: orderReady,
+    outForDelivery: orderOutforDelivery,
+    storePickup: orderStorePickup,
+    pastOrders: pastOrders
+  }
+
+  const [orders, setOrders] = useState(ordersMap["placed"]);
+
+  <Chip label="7" color="primary" size="small" variant="outlined" sx={{ backgroundColor: "#ffffff", ml: 1, height: 17, fontSize: "12px" }} />
